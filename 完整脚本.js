@@ -21,20 +21,20 @@ function TG_Health(){
     sleep(5000)      //定位延迟根据实际网速设置,5s应该足够
     click("确认")		//如果是重复打卡，点击确认
     sleep(3000)
-    click("签到")
+    while(!click("签到"));
     sleep(3000)      
     //click("已知晓")  //默认两个已知晓全选，用数组区分
     //sleep(300)
-    click("已知晓",1)
+    while(!click("已知晓",1));
     sleep(300)
-    click("已知晓",3)
-    sleep(300)
-    click("为疫情防控")
-    sleep(300)
-    click("上述信息是我本人填写")
-    sleep(300)
+    while(!click("已知晓",3));
+    sleep(500)
+    while(!click("为疫情防控，"));
+    sleep(500)
+    while(!click("上述信息是我本人填写"))
+    sleep(500)
     click("提交")
-    sleep(300)
+    sleep(500)
 }
 function OpenMusic(){
 	launchApp("网易云音乐");    
@@ -43,7 +43,7 @@ function OpenMusic(){
     var maxMusic = device.getMusicMaxVolume()
     device.setMusicVolume(maxMusic*0.5)		//设置音量为50
 }
-
+//sleep(3000)
 TG_Health();	//调用打卡函数
 //for循环检测打卡是否成功
 for(var i=0;i<=2;i++){
