@@ -24,4 +24,4 @@
 4. 手机设置->电池->Auto.js->允许自启动，允许后台活动
 5. 身心地投入到社会主义建设之中
 
-具体方法参考[B站视频](https://zhangshier.vip/posts/64506/)，以及[博客说明](https://zhangshier.vip/posts/64506/)
+具体方法参考[B站视频](https://www.bilibili.com/video/BV1eB4y1Y7Do/?vd_source=22a317dd48c52eb9f459b82b0558cf90)，以及[博客说明](https://zhangshier.vip/posts/64506/)
